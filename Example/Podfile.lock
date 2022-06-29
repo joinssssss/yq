@@ -19,7 +19,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - YQSDK (0.1.0):
+  - YQSDK (1.0.0):
     - AFNetworking
 
 DEPENDENCIES:
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  YQSDK: e9efc25b001194020d336c2dcebe901c41dbdc07
+  YQSDK: 93ce20d90360400c55a9c8ccb8a0551d082160bc
 
 PODFILE CHECKSUM: 710b50feae30f7fec3eb07fb9777533667d909e9
 

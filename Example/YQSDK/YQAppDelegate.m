@@ -7,12 +7,13 @@
 //
 
 #import "YQAppDelegate.h"
-
+#import <SyrSDK.h>
 @implementation YQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSString *ss = [SyrSDK getSyrSDKVersion];
     return YES;
 }
 

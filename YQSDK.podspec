@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YQSDK'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = ' The description is equal to the summary'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'YQSDK/Classes/**/*'
   
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # s.resource_bundles = {
   #   'YQSDK' => ['YQSDK/Assets/*.png']
   # }

@@ -1,6 +1,6 @@
 {
   "name": "YQSDK",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "The description is equal to the summary",
   "description": "description description description description description",
   "homepage": "https://github.com/joinssssss/yq",
@@ -13,12 +13,15 @@
   },
   "source": {
     "git": "https://github.com/joinssssss/yq.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "11.0"
   },
   "source_files": "YQSDK/Classes/**/*",
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
   "dependencies": {
     "AFNetworking": [
 
