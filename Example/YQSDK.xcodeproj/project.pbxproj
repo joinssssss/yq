@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		02120122515E2350AF1EC324 /* Pods_YQSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1581C20748DE6961A6EF784E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1C09C49D34A759C0D65F8B47 /* YQSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YQSDK.podspec; path = ../YQSDK.podspec; sourceTree = "<group>"; };
+		1581C20748DE6961A6EF784E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1C09C49D34A759C0D65F8B47 /* YQSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YQSDK.podspec; path = ../YQSDK.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YQSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		71AF5233837F56CA0E0A6C32 /* Pods-YQSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-YQSDK_Tests/Pods-YQSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		922720721ED9BF1D65F45C51 /* Pods-YQSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-YQSDK_Example/Pods-YQSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BCFDE6FEC8F1C8AE85509FE7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BCFDE6FEC8F1C8AE85509FE7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C9AEBAE051CF663F339AEF1F /* Pods-YQSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-YQSDK_Example/Pods-YQSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D607FC7431EC23B1D1CC8EDA /* Pods-YQSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YQSDK_Tests/Pods-YQSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				D607FC7431EC23B1D1CC8EDA /* Pods-YQSDK_Tests.debug.xcconfig */,
 				71AF5233837F56CA0E0A6C32 /* Pods-YQSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +303,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YQSDK_Example/Pods-YQSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/YQSDK/YQSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YQSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +518,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YQSDK/YQSDK-Prefix.pch";
 				INFOPLIST_FILE = "YQSDK/YQSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +535,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YQSDK/YQSDK-Prefix.pch";
 				INFOPLIST_FILE = "YQSDK/YQSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

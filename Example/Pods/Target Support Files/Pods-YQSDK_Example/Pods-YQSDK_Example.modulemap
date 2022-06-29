@@ -1,0 +1,6 @@
+framework module Pods_YQSDK_Example {
+  umbrella header "Pods-YQSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

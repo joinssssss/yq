@@ -1,0 +1,6 @@
+framework module YQSDK {
+  umbrella header "YQSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

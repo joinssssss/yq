@@ -1,0 +1,27 @@
+{
+  "name": "YQSDK",
+  "version": "0.1.0",
+  "summary": "The description is equal to the summary",
+  "description": "description description description description description",
+  "homepage": "https://github.com/joinssssss/yq",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "石宏栋": "18156580255@163.com"
+  },
+  "source": {
+    "git": "https://github.com/joinssssss/yq.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "YQSDK/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  }
+}

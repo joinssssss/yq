@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YQSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YQSDK.'
+  s.summary          = ' The description is equal to the summary'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,18 +17,16 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'description description description description description'
 
-  s.homepage         = 'https://github.com/石宏栋/YQSDK'
+  s.homepage         = 'https://github.com/joinssssss/yq'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '石宏栋' => '18156580255@163.com' }
-  s.source           = { :git => 'https://github.com/石宏栋/YQSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/joinssssss/yq.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'YQSDK/Classes/**/*'
   
@@ -38,5 +36,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking'
 end
